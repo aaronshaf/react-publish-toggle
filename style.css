@@ -2,10 +2,21 @@
   display: inline-block;
 }
 
-.ReactPublishToggle--published {
+.ReactPublishToggle--published path {
+  fill: #2BBE37;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-.ReactPublishToggle--unpublished {
+.ReactPublishToggle--unpublished path {
+  fill: #808080;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
 }
 
 .ReactPublishToggle__screenreader-only {

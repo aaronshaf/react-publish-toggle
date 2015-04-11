@@ -5,7 +5,7 @@
   "main": "index.js",
   "style": "style.css",
   "scripts": {
-    "build": "babel index.es6.js --out-file index.js && babel published-icon.es6.js --out-file published-icon.js && babel unpublished-icon.es6.js --out-file unpublished-icon.js && webpack",
+    "build": "babel index.es6.js --out-file index.js && webpack",
     "dev": "webpack --watch"
   },
   "keywords": [
