@@ -1,7 +1,7 @@
 {
-  "name": "react-publish-button",
+  "name": "react-publish-toggle",
   "version": "0.0.0",
-  "description": "React component for published/unpublished state.",
+  "description": "React component for published/unpublished state. WIP. Not ready for production.",
   "main": "index.js",
   "style": "style.css",
   "scripts": {
@@ -9,19 +9,19 @@
     "dev": "webpack --watch"
   },
   "keywords": [
-    "button",
+    "toggle",
     "component",
     "react",
     "react-component"
   ],
   "author": "Aaron Shafovaloff <ashafovaloff@instructure.com>",
-  "homepage": "https://github.com/instructure-react/react-publish-button",
+  "homepage": "https://github.com/instructure-react/react-publish-toggle",
   "repository": {
     "type": "git",
-    "url": "git@github.com:instructure-react/react-publish-button.git"
+    "url": "git@github.com:instructure-react/react-publish-toggle.git"
   },
   "bugs": {
-    "url": "https://github.com/instructure-react/react-publish-button/issues"
+    "url": "https://github.com/instructure-react/react-publish-toggle/issues"
   },
   "license": "MIT",
   "devDependencies": {
