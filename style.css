@@ -1,0 +1,26 @@
+.ReactPublishToggle {
+  display: inline-block;
+}
+
+.ReactPublishToggle--published {
+}
+
+.ReactPublishToggle--unpublished {
+}
+
+.ReactPublishToggle__screenreader-only-tmp {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.ReactPublishToggle__published-icon-svg,
+.ReactPublishToggle__unpublished-icon-svg {
+  width: 20px;
+  height: 26px;
+}
