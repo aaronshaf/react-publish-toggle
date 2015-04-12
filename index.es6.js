@@ -64,8 +64,21 @@ const PublishToggle = React.createClass({
           onBlur={this.handleBlur}
           {...this.props}
       />
-        <svg className="ReactPublishToggle-published-icon-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-          <path d="M29.867 19.418c0 4.305-3.488 7.795-7.8 7.795H7.348c-2.933-.423-5.197-3.01-5.197-6.063 0-2.44 1.448-4.53 3.526-5.49-.024-.197-.06-.392-.06-.594 0-2.87 2.324-5.197 5.194-5.197.663 0 1.29.134 1.874.36.645-3.158 3.436-5.536 6.787-5.536 3.833 0 6.932 3.103 6.932 6.93 0 .427-.05.84-.125 1.248 2.155 1.387 3.59 3.794 3.59 6.547zm-7.452-8.25c-.763-.562-1.852-.408-2.424.346l-5.265 6.924-2.886-2.832c-.678-.665-1.774-.665-2.45 0-.678.663-.678 1.74 0 2.404l5.717 5.61 7.662-10.073c.57-.753.413-1.818-.355-2.378z"/>
+        <svg className="ReactPublishToggle__svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <defs>
+            <filter id="f2" x="0" y="0" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+              <feFlood flood-color="#3D4574" flood-opacity="0.5" result="offsetColor"/>
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+            </filter>
+          </defs>
+
+          <path filter="url(#f2)" className="ReactPublishToggle__cloud"
+            d="M26.287 12.893c.073-.406.125-.82.125-1.248 0-3.824-3.097-6.925-6.927-6.925-3.35 0-6.14 2.377-6.783 5.534-.583-.227-1.21-.362-1.873-.362-2.87 0-5.193 2.326-5.193 5.194 0 .203.037.397.06.595-2.075.96-3.522 3.05-3.522 5.487 0 3.05 2.245 6.06 5.194 6.06h14.71c4.31 0 7.795-3.49 7.795-7.792 0-2.75-1.434-5.157-3.588-6.543z"/>
+          <path
+             className="ReactPublishToggle__check"
+             d="m 22.415,11.168 c -0.763,-0.562 -1.852,-0.408 -2.424,0.346 l -5.265,6.924 -2.886,-2.832 c -0.678,-0.665 -1.774,-0.665 -2.45,0 -0.678,0.663 -0.678,1.74 0,2.404 l 5.717,5.61 7.662,-10.073 c 0.57,-0.753 0.413,-1.818 -0.355,-2.378 z" />
         </svg>
       </div>
     )

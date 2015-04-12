@@ -2,21 +2,38 @@
   display: inline-block;
 }
 
-.ReactPublishToggle--published path {
+.ReactPublishToggle--published .ReactPublishToggle__cloud {
   fill: #2BBE37;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
 }
 
-.ReactPublishToggle--unpublished path {
+.ReactPublishToggle--unpublished .ReactPublishToggle__cloud {
   fill: #808080;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
 
+.ReactPublishToggle__check {
+  fill: white;
+}
+
+.ReactPublishToggle--published .ReactPublishToggle__check {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.ReactPublishToggle--unpublished .ReactPublishToggle__check {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .ReactPublishToggle__screenreader-only {
@@ -28,10 +45,4 @@
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.ReactPublishToggle__published-icon-svg,
-.ReactPublishToggle__unpublished-icon-svg {
-  width: 20px;
-  height: 26px;
 }
