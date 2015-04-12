@@ -18,16 +18,16 @@
   fill: #2BBE37;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
 }
 
 .ReactPublishToggle--unpublished .ReactPublishToggle__cloud {
   fill: #808080;
   -webkit-transition-property: fill;
   transition-property: fill;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
 }
 
 .ReactPublishToggle__check {
@@ -36,14 +36,14 @@
 
 .ReactPublishToggle--published .ReactPublishToggle__check {
   opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.15s;
+  transition: opacity 0.15s;
 }
 
 .ReactPublishToggle--unpublished .ReactPublishToggle__check {
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.15s;
+  transition: opacity 0.15s;
 }
 
 .ReactPublishToggle__screenreader-only {
