@@ -28,7 +28,8 @@ var PublishToggle = _React2['default'].createClass({
 
   getInitialState: function getInitialState() {
     return {
-      hasFocus: false
+      hasFocus: false,
+      active: false
     };
   },
 
@@ -51,6 +52,14 @@ var PublishToggle = _React2['default'].createClass({
     this.setState({ hasFocus: false });
   },
 
+  handleKeyDown: function handleKeyDown() {
+    this.setState({ active: true });
+  },
+
+  handleKeyUp: function handleKeyUp() {
+    this.setState({ active: false });
+  },
+
   isChecked: function isChecked() {
     if (this.props.checked != null) {
       return this.props.checked;
@@ -67,6 +76,7 @@ var PublishToggle = _React2['default'].createClass({
       'ReactPublishToggle--published': this.props.published,
       'ReactPublishToggle--unpublished': !this.props.published,
       'ReactPublishToggle--focus': this.state.hasFocus,
+      'ReactPublishToggle--active': this.state.active,
       'ReactPublishToggle--disabled': this.props.disabled
     });
 
@@ -79,11 +89,13 @@ var PublishToggle = _React2['default'].createClass({
         defaultChecked: this.props.published,
         ref: 'input',
         onFocus: this.handleFocus,
-        onBlur: this.handleBlur
+        onBlur: this.handleBlur,
+        onKeyDown: this.handleKeyDown,
+        onKeyUp: this.handleKeyUp
       }, this.props)),
       _React2['default'].createElement(
         'svg',
-        { className: 'ReactPublishToggle__svg', xmlns: 'http://www.w3.org/2000/svg', width: '22', height: '22', viewBox: '0 0 32 32' },
+        { className: 'ReactPublishToggle__svg', xmlns: 'http://www.w3.org/2000/svg', width: '24', height: '22', viewBox: '0 0 32 32' },
         _React2['default'].createElement('path', { className: 'ReactPublishToggle__cloud',
           d: 'M26.287 12.893c.073-.406.125-.82.125-1.248 0-3.824-3.097-6.925-6.927-6.925-3.35 0-6.14 2.377-6.783 5.534-.583-.227-1.21-.362-1.873-.362-2.87 0-5.193 2.326-5.193 5.194 0 .203.037.397.06.595-2.075.96-3.522 3.05-3.522 5.487 0 3.05 2.245 6.06 5.194 6.06h14.71c4.31 0 7.795-3.49 7.795-7.792 0-2.75-1.434-5.157-3.588-6.543z' }),
         _React2['default'].createElement('path', {

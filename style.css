@@ -4,30 +4,27 @@
 
 .ReactPublishToggle--focus .ReactPublishToggle__cloud {
   stroke: #0099E0;
-  stroke-width: 2;
+  stroke-width: 3;
   stroke-opacity: 1.0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
+.ReactPublishToggle--active .ReactPublishToggle__cloud,
 .ReactPublishToggle:active .ReactPublishToggle__cloud {
   stroke: #0099E0;
-  stroke-width: 5;
-  stroke-opacity: 0.7;
+  stroke-width: 7;
+  stroke-opacity: 0.65;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .ReactPublishToggle--published .ReactPublishToggle__cloud {
   fill: #2BBE37;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
 }
 
 .ReactPublishToggle--unpublished .ReactPublishToggle__cloud {
   fill: #808080;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 0.15s;
-  transition-duration: 0.15s;
 }
 
 .ReactPublishToggle__check {
@@ -36,14 +33,14 @@
 
 .ReactPublishToggle--published .ReactPublishToggle__check {
   opacity: 1;
-  -webkit-transition: opacity 0.15s;
-  transition: opacity 0.15s;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 .ReactPublishToggle--unpublished .ReactPublishToggle__check {
   opacity: 0;
-  -webkit-transition: opacity 0.15s;
-  transition: opacity 0.15s;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 .ReactPublishToggle__screenreader-only {
