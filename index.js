@@ -49,7 +49,10 @@ var PublishToggle = _React2['default'].createClass({
   },
 
   handleBlur: function handleBlur() {
-    this.setState({ hasFocus: false });
+    this.setState({
+      hasFocus: false,
+      active: false
+    });
   },
 
   handleKeyDown: function handleKeyDown() {

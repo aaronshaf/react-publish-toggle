@@ -32,7 +32,10 @@ const PublishToggle = React.createClass({
   },
 
   handleBlur() {
-    this.setState({hasFocus: false})
+    this.setState({
+      hasFocus: false,
+      active: false
+    })
   },
 
   handleKeyDown () {
