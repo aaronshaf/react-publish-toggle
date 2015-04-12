@@ -1,6 +1,6 @@
 {
   "name": "react-publish-toggle",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React component for published/unpublished state. WIP. Not ready for production.",
   "main": "index.js",
   "style": "style.css",

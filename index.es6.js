@@ -12,6 +12,7 @@ const PublishToggle = React.createClass({
   getInitialState() {
     return {
       hasFocus: false,
+      isChecked: false,
       active: false
     }
   },
@@ -46,19 +47,8 @@ const PublishToggle = React.createClass({
     this.setState({active: false})
   },
 
-  isChecked() {
-    if (this.props.checked != null) {
-      return this.props.checked
-    }
-    if (this.refs.input) {
-      return this.refs.input.getDOMNode().checked
-    }
-    return this.props.published || false
-  },
-
   render () {
     var classes = classSet('ReactPublishToggle', {
-      'ReactPublishToggle': this.isChecked(),
       'ReactPublishToggle--published': this.props.published,
       'ReactPublishToggle--unpublished': !this.props.published,
       'ReactPublishToggle--focus': this.state.hasFocus,
