@@ -1,5 +1,6 @@
 .ReactPublishToggle {
   display: inline-block;
+  cursor: default;
 }
 
 .ReactPublishToggle--focus .ReactPublishToggle__cloud {
